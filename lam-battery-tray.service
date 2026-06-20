@@ -1,0 +1,16 @@
+[Unit]
+Description=LAM Arctis Battery Tray Icon
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+# If installing globally via AUR, this path will be updated to /usr/bin/lam_battery_tray
+# For local usage, change this path to point to your clone.
+ExecStart=/usr/bin/python3 %h/git/lam_battery_tray/lam_battery_tray.py
+Restart=on-failure
+RestartSec=5
+Environment=QT_QPA_PLATFORMTHEME=qt5ct
+
+[Install]
+WantedBy=default.target
