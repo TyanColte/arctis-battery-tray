@@ -16,7 +16,7 @@ This is a frontend UI built exclusively for the phenomenal `linux-arctis-manager
 
 * Python 3
 * PyQt6 (install via `pip install -r requirements.txt` or your package manager)
-* [linux-arctis-manager](https://github.com/giacomofurlan/linux-arctis-manager) daemon running on the user session bus.
+* [linux-arctis-manager](https://github.com/elegos/Linux-Arctis-Manager) daemon running on the user session bus.
 
 ## Installation & Autostart (Linux)
 
